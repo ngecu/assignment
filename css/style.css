@@ -1,0 +1,241 @@
+/* *{
+    border: 0 !important;
+    margin: 0 !important;
+} */
+a{
+    text-decoration: none;
+}
+body{
+    height: 91vh;
+    border: 0 !important;
+    margin: 0 !important;
+
+}
+.navbar{
+    background-color: #39386E;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.american-flag{
+    border-radius: 50%;
+    width: 5%;
+    margin: 1%;
+
+}
+.outer-container{
+    height: 100%;
+    background-image: url('../images/wallb.jpg');
+    color: white;
+    background-position: center;
+    background-blend-mode: lighten;
+    background-size: cover;
+    text-align: center;
+}
+.outer-container h1{
+    margin: 0;
+
+  }
+    
+    
+
+.vote-now{
+   position: relative;
+   left: 70%; 
+   background-color: green;
+}
+.main{
+    display: flex;
+    width: 100vw;
+}
+/* #trump,#obama{
+    width: 45%;
+    text-align: center;
+    height: 100px;
+} */
+#trump img,#obama img{
+    width: 100%;
+}
+#obama h1{
+    color: blue;
+}
+#trump h1{
+    color: red;
+}
+/* table{
+    width: 100%;
+    text-align: center;
+} */
+
+
+@-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  .ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 5.3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 100%;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  #span{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+  }
+  
+  .ticker-wrap .ticker {
+    display: inline-block;
+    height: 100%;
+    line-height: 5rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+  }
+  
+
+  .ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: white;
+    /* list-style-type: circle;
+    border-right: 1px white solid !important; */
+  }
+
+  .get-started{
+      background-color: #3c3b6e ;
+      padding: 1% 2% ;
+      position: relative;
+      left: -.52%;
+      top: 5%;
+  }
+  .get-started a {
+      color: white;
+      text-decoration: none;
+      font-size: large;
+  }
+  h1,h3,h2{
+    margin: 0;
+  }
+  #choice{
+    font-size: 5rem;
+    text-decoration: underline;
+  }
+  sub{
+    margin-left: 10px;
+    margin-right: 12px;
+  }
+  .trumpheader{
+    color:#D62B3C ;
+  }
+  .biddenheader{
+    color:#218ECD ;
+  }
+
+  .poster {
+    position: relative;
+
+  }
+  .tv{
+    position: fixed;
+    bottom:0 ;
+    left: 0;
+    color: white;
+    line-height: 5rem;
+    /* width: 10px;
+    height: 10px; */
+    background: linear-gradient(-45deg, #222831, #393e46, #ffd369, #eeeeee);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding-left: 2%;
+  padding-right: 2%;
+  }
+  
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+button{
+  cursor: pointer;
+  padding: 2%;
+  color: white;
+  display: inline-block;
+  
+                    font-weight: 400;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    border: 1px solid transparent;
+                        border-top-color: transparent;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  
+}
+.player{
+
+  width: 35%;
+  position: relative;
+  top: 5%;
+  left: 32.5%;
+  clip-path: polygon(0 0,100% 0,88% 100%,12% 100%);
+}
+.player video{
+  width: 100%;
+}

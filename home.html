@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="stylesheet" href="css/PrestratFont.css">
+  <title>RESULTS</title>
+</head>
+<body>
+
+    <div class="outer-container">
+        <div id="span"></div>
+    
+        <h1>US Election Results</h1>
+
+        <table>
+            <tr>
+                <td rowspan="3">
+                    <img src="images/trump-poster.jpg" alt="">   
+                </td>
+                <td class="trump">
+                    <h1 id="trumpenv">
+                       
+                                TRUMP
+                    
+                            
+                        </sub>
+                    </h1>
+                </td>
+                <td class="biden">
+                    <h1 id="bidenv">BIDEN</h1>
+                    
+                        
+                            
+
+                        
+                    </sub>
+                </td>
+                <td rowspan="3">
+                    <img src="images/biden-poster.jpg" alt="">   
+                   </td>
+                 
+            </tr>
+            <tr>
+               
+                <td class="trump-portion" id="trump-portion" >
+
+                </td>
+                <td class="biden-portion" id="biden-portion" >
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: start;">
+                    <small>
+                        <span id="biddenv"></span>votes ( <span id="biden%"></span> %)</small>
+
+                </td>
+                
+                <td style="text-align: end;">
+                    <small>
+                        <span id="trumpv"></span> votes ( <span id="trump%"></span> %)
+                    </small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td style="text-align: start;">
+                    <button style="background-color: #0069D9;" onclick="voteForBiden()"> Vote For Bidden</button>
+                </td>
+                <td style="text-align: end;">
+                    <small>
+                        <button style="background-color: #C82333;" onclick="voteForTrump()">
+                            Vote For Trump
+                        </button>
+                    </small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td colspan="2" style="text-align: center;">
+                Vote,refresh for initial count  <span id="total_votesx"></span>
+                </td>
+            </tr>
+
+        </table>
+
+    
+    </div>
+    <div class="ticker-wrap">
+        <ul class="ticker">
+        <li class="ticker__item">Karen Nyamu: I didn't know Samidoh was married  ||</li>
+          <li class="ticker__item">IEBC fallout threatens referendum || </li>
+          <li class="ticker__item">State to regulate Kenyans seeking treatment abroad || </li>
+          <li class="ticker__item">Tanzania nuns and priests dying 'with Covid symptoms || </li>
+ 
+        </ul>
+        </div>
+        <span class="tv" >DEV NGECU TV</span>
+
+</body>
+<script src="js/time.js"></script>
+<script src="js/vote.js"></script>
+</html>
